@@ -174,7 +174,7 @@ contract ReentranceAttack {
 
 #### Recommended Mitigation
 
-Apply all three of the following, in order of priority:
+Apply the following:
 
 **1. Enforce Checks-Effects-Interactions (CEI)**
 

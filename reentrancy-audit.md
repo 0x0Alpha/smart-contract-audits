@@ -97,11 +97,11 @@ The `withdraw()` function violates the [Checks-Effects-Interactions (CEI)](https
 ```solidity
 function withdraw(uint256 _amount) public {
     if (balances[msg.sender] >= _amount) {
-        (bool result,) = msg.sender.call{value: _amount}("");  // ← ETH sent first
+        (bool result,) = msg.sender.call{value: _amount}("");  // ETH sent first
         if (result) {
             _amount;
         }
-        balances[msg.sender] -= _amount;  // ← balance updated after the call
+        balances[msg.sender] -= _amount;  // balance updated after the call
     }
 }
 ```

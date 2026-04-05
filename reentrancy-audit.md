@@ -157,7 +157,7 @@ contract ReentranceAttack {
 **Execution steps:**
 
 1. Deploy `ReentranceAttack` with the victim's address.
-2. Call `attack()` with `17400000 GWEI` — this seeds a legitimate balance entry and immediately calls `withdraw()`.
+2. Call `attack()` with `1000000 GWEI (0.001 ETH)` — this seeds a legitimate balance entry and immediately calls `withdraw()`.
 3. The victim sends ETH - triggers `receive()` - re-enters `withdraw()` - repeats until `victim.balance < attackAmount`.
 4. Call `drain()` to transfer all stolen ETH to your EOA.
 

@@ -176,7 +176,7 @@ contract ReentranceAttack {
 
 Apply the following:
 
-**1. Enforce Checks-Effects-Interactions (CEI)**
+**Enforce Checks-Effects-Interactions (CEI)**
 
 Decrement the balance *before* the external call so that any re-entrant call sees a zeroed balance and exits cleanly.
 

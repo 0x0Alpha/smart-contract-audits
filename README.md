@@ -1,2 +1,2 @@
 # ethernaut
-Here are all of the ethernaut levels I have completed and their solution
+Here are all of the smart contract audits that I have done
